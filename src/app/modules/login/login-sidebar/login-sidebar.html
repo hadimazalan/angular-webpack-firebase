@@ -1,0 +1,27 @@
+<md-sidenav
+        class="md-sidenav-right md-whiteframe-8dp login-column"
+        md-component-id="right"
+        md-is-locked-open="'true'">
+    <md-content layout-padding>
+        <div id="login-form" layout="column" layout-align="center center">
+            <h3 class="md-headline">Log in to your account</h3>
+            <form>
+                <md-input-container class="md-block">
+                    <label for="username">Login</label>
+                    <input type="text" id="username" ng-model="vm.username" md-autofocus>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" ng-model="vm.password">
+                </md-input-container>
+                <div class="remember-forgot-password">
+                    <md-checkbox ng-model="data.cb1" aria-label="Remember Me" role="checkbox" aria-checked="false"
+                                 aria-invalid="false">
+                        Remember Me
+                    </md-checkbox>
+                </div>
+            </form>
+            <md-button ng-click="login.createAccount(vm.username, vm.password)" class="md-raised md-primary submit-button">LOG IN</md-button>
+        </div>
+    </md-content>
+</md-sidenav>

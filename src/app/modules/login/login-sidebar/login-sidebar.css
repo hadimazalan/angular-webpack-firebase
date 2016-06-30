@@ -1,0 +1,33 @@
+login-sidebar md-sidenav {
+    height: 100%;
+}
+login-sidebar md-sidenav.login-column {
+    width: 416px;
+    min-width: 416px;
+    max-width: 416px;
+}
+@media screen and (max-width: 960px) {
+    login-sidebar.login-column {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+login-sidebar.login-column .md-headline {
+    font-size: 21px;
+}
+login-sidebar.login-column #login-form {
+    padding: 128px 48px 48px;
+}
+login-sidebar.login-column form {
+    min-width: 100%;
+}
+login-sidebar.login-column .remember-forgot-password {
+    font-size: 13px;
+}
+login-sidebar.login-column md-checkbox .md-label {
+    vertical-align: middle;
+}
+login-sidebar.login-column .submit-button {
+    width: 100%;
+}

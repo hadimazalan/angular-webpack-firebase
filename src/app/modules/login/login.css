@@ -1,0 +1,25 @@
+login #login {
+    height: 100%;
+    overflow: hidden;
+    background: url("../../../public/img/blue.jpg") no-repeat;
+    background-size: cover;
+}
+
+login .intro {
+    padding: 128px;
+}
+
+login .intro .title {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+.login-welcome {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 960px) {
+    .login-welcome {
+        display: none;
+    }
+}
